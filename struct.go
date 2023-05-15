@@ -7,12 +7,18 @@ type Customer struct{
 	Age int
 }
 
+func (pelanggan Customer) saySelamatDatang(name string){
+	fmt.Println("selamat datang wahai",pelanggan.Name, "saya adalah",name)
+}
+
 func main(){
 
 	var Yajed Customer
 	Yajed.Name = "Yajed"
 	Yajed.Addres = "Mojosongo"
 	Yajed.Age = 23
+
+	Yajed.saySelamatDatang("karyawan")
 
 	fmt.Println(Yajed)
 	fmt.Println(Yajed.Name)
